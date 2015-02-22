@@ -1,0 +1,18 @@
+
+#branch {
+  position: fixed;
+  top: 20px;
+  left: 0px;
+  z-index: -1;
+}
+
+#bird1 img, #bird2 img, #bird3 img {
+  width: 100px;
+}
+
+#cage {
+  position: fixed;
+  top: 120px;
+  left: 100px;
+  z-index: 10;
+}

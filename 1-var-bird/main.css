@@ -1,0 +1,22 @@
+
+#branch {
+  position: fixed;
+  top: 175px;
+  left: 0px;
+}
+
+#bird1  {
+  position: fixed;
+  top: 142px;
+  left: 80px;
+}
+
+#bird1 img {
+  width: 100px;
+}
+
+#bird2  {
+  position: fixed;
+  top: 10px;
+  left: 50px;
+}
