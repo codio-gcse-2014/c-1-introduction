@@ -9,7 +9,7 @@ files:
   - action: open
     path: "#preview: 1-var-bird/index.html"
     panel: 1
-layout: 3-cell-tree
+layout: 3-cell
 step: 1-var-bird
 
 ---
