@@ -25,7 +25,7 @@ function main() {
         currentX = 110;
       }
     }    
-    
+
   }
   
 }

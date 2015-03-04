@@ -19,10 +19,10 @@ Rather than explain what a variable is, let's dive straight into some code and s
 
 Right now, you should see two tabs open up on the left hand side.
 
-1. The tab `main.js` in the uppoer panel contains our code.
-1. The tab `index.html` that is the *Preview* window, which shows our program running. You can refresh the Preview if you change code by hitting the refresh button at the top left of that window.
+1. The tab `main.js` in the upper panel contains our code.
+1. The tab `index.html` is the *Preview* window, which shows our program running. You can refresh the Preview if you change code by hitting the 'Reload preview' at the top left of that window. It's the button with two circular arrows.
 
-In the `index.html` preview window on the left, you should see a picture of a small bird sitting on a branch but the big bird is above the branch.
+In the `index.html` preview window on the left, you should see a picture of a small bird sitting on a branch and a bigger bird above the branch.
 
 >Move to the next page by clicking the **Next** button at the bottom right of this page and we'll start hacking around our first piece of code.
 
@@ -31,7 +31,7 @@ title: Sit the bird on the branch
 files: []
 
 ---
-Click the code tab `main.js` on the left to view your code.
+Look at `main.js` on the left to view your code.
 
 ## Challenge
 Can you see how to sit both birds on the branch by adjusting the coordinates in `main.js`? Press the refresh button in the Preview tab after editing the code.
@@ -47,9 +47,18 @@ files: []
 ---
 Well done if both birds are now roosting comfortably.
 
+In all of our examples, you'll see this line. 
+
+```javascript
+function main() {
+```
+
+For now, don't worry what this means as we'll go into this later.
+
 So, how does our code actually *run*? Take a look at the video below and we'll explain. 
 
-<iframe src="//player.vimeo.com/video/119136128" width="500" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/121280241" width="500" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 ---
 title: Variable recap
 files: []
@@ -70,7 +79,8 @@ So let's define what a variable actually is. Here's our simple code again
 1. A variable is a place where you can store a value. 
 1. You give your variable a name you choose that helps you identify its purpose (xBird is a variable that holds the X coordinate of a bird)
 1. The variable name should only contain letters, characters and the '-' or '_' characters. It may also not have spaces.
-1. Define your variables (`var xBird`) before you assign them a value (`xBird=100`).
+1. Define your variables (`var xBird`) by using writing `var` followed by a space and then the name you want to give your variable
+1. You can now assign the variable a value by adding `=` followed by the value you want to assign to your variable (`xBird=100`).
 
 We'll move on to more interesting uses of variables in the next sections.
 
@@ -165,6 +175,8 @@ Replaying what we saw in the previous section, our algorithm looks like this
 1. We can first figure out the coordinate of the first bird and get it sitting on the left of the branch.
 1. Then we simply space the other birds out evenly across the branch.
 1. To achieve this, we'll create a variable `gap` and use that to calculate the position of the second and third birds.
+
+You can see all of this coming together with the key line : `positionBirds(x, y, x+gap, y, x+gap*2, y);`
 ---
 title: Our first flowchart
 files: []
@@ -174,7 +186,7 @@ A *flowchart* or *flow diagram* is an extremely useful way of visualizing an alg
 
 When things get a bit more complex, this visualisation becomes even more helpful as we'll see in a later section.
 
-## FLowcharting our simple algorithm
+## Flowcharting our simple algorithm
 
 ![](.guides/img/flow-3birds.png)
 ---
@@ -221,6 +233,8 @@ step: 5-while
 ---
 A *Loop* is a far more efficient way of dealing with situations like this and we'll use a loop to position our 7 birds.
 
+It is is a little jump in complexity, so brace yourself. However, you'll the hang of it and you *need* to get the hang of it as loops are an essential part of all programming.
+
 You may remember from an earlier section that we figured out a simple algorithm to position the first bird before adding the `gap` to the x coordinate of each bird. 
 
 ```js
@@ -232,7 +246,7 @@ Our new code on the left uses this same approach but instead it uses a *while* l
 ## VIDEO
 Looks at this video to help you visualise what's going on with our loop code.
 
-<iframe src="//player.vimeo.com/video/119136129" width="500" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/121280245" width="500" height="240" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 In words, we do the following 
 
@@ -314,7 +328,7 @@ for(initialX=50, gap=60, counter=0; counter<7; counter++)
 
 1. Initialises the variables you specify in the first part of the statement, before the first `;` so in our code `initialX=50, gap=60, counter=0`.
 1. After the first `;` comes the condition for the loop to continue executing, which is `counter<7`
-1. After the second `;` you specify what should happen at the end of the loop. In our case, it increments the `counter` variable by 1. `counter++` is Javascript shorthand for `counter=counter+1`.
+1. After the second `;` you specify what should happen at the end of the loop. In our case, it *increments* (increases the value of) the `counter` variable by 1. `counter++` is Javascript shorthand for `counter=counter+1`.
 
 
 ## While or For?
@@ -436,7 +450,84 @@ Nesting is where a statement of one type (`if` in this case) is nested, or sits 
 
 `
 ---
-title: Creating our own functions
+title: Functions
+files: []
+
+---
+Functions are another of those things that are incredibly important in any programming language. There's no way around understanding this, so make sure you get it!
+
+## Some code
+Here is some code that we had in our loop in the previous section.
+
+```javascript
+  for(initialX=50, gap=60, counter=0; counter<20; counter++) {
+    calcX = initialX + gap*counter;
+    
+    if(calcX < 450) {
+      // the bird is on the branch
+      createBird(calcX, 25);
+    }
+    else {
+      // the bird is too far to the right            
+      createBird(currentX, currentY);
+      currentX = currentX + 60;
+      if(currentX > 360) {
+        currentY += 80;
+        currentX = 110;
+      }
+    }    
+    
+  }
+```
+
+A function lets you take a block of code, wrap it up and give it its own name. You can then *call* that function from anywhere else in your code.
+
+So, the code above now looks like this.
+
+```javascript
+function checkBird(x) {
+  
+  if(x < 450) {
+    // the bird is on the branch
+    createBird(x, 25);
+  }
+  else {
+    // the bird is too far to the right            
+    createBird(currentX, currentY);
+    currentX = currentX + 60;
+    if(currentX > 360) {
+      currentY += 80;
+      currentX = 110;
+    }
+  }    
+
+}
+
+function main() {
+
+  var initialX, calcX, gap;
+  var counter;
+  
+  // Here's the loop
+  for(initialX=50, gap=60, counter=0; counter<20; counter++) {
+    calcX = initialX + gap*counter;
+    checkBird(calcX);  
+  }
+  
+}
+```
+
+Things to notice
+
+- Look inside the `for` loop. What is now inside the function `checkBird()` at the top, used to be inside the `for` loop.
+- Our `for` loop now looks much less cluttered and is easier to read.
+- The new `checkBird()` function can be used by any code anywhere else in your program. If you did not use a function, you would have to repeat the same code everywhere esle you wanted to create a bird. Now you don't.
+
+Move to the next section for a video and a few more details.
+
+
+---
+title: More on functions
 files:
   - action: close
     path: "#tabs"
@@ -450,36 +541,46 @@ layout: ""
 step: 8-functions
 
 ---
-If you look at `main.js` now, you'll see that our loop looks much simpler. What we've done is to take all of the  `if` code and move it into a new function called `checkBird()`.
-
-This function expects to be told the X coordinate of the bird. It does not need the Y coordinate as we know that the Y coordinate for the branch is 120 unless it does not have room on the branch, in which case we are positioning it in the cage.
-
-## Function Declarations
-We *declare* our function as follows
-
-```js
-function checkBird(x)
-```
-
-1. Start the line with `function`
-1. Choose a meaningful name for our function
-1. Inside the brackets, specify any parameters that the function expects to receive.
-
-Functions can have any number of parameters, so the following are all possible examples
-
-```js
-function checkBird(x)
-function checkBird()
-function checkBird(x, y)
-function checkBird(x, y, birdName)
-```
-
-In Javascript, function names are like variable names in that they should not contain spaces and may only contain letters, numbers or the '-' or '_' characters.
+Look at the code on the left and the preview. We'll now explain what is going on here.
 
 ## Video
 Watch this video to see how the program executes.
 
-<iframe src="//player.vimeo.com/video/119145831" width="500" height="230" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="//player.vimeo.com/video/121280244" width="500" height="230" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+## Function declarations
+We *declare* our function as follows
+
+```js
+function createBird(x)
+```
+
+1. Start the line with `function`
+1. Choose a meaningful name for our function
+1. Inside the brackets, specify any 'parameters' (see below) that the function expects to receive.
+
+Functions can have any number of parameters, so the following are all possible examples
+
+```js
+function createBird(x)
+function createBird()
+function createBird(x, y)
+function createBird(x, y, birdName)
+```
+
+In Javascript, function names follow the same rules as variable names. They should not contain spaces and may only contain letters, numbers or the '-' or '_' characters.
+
+## What are parameters?
+You can think of a parameter as behaving rather like a variable. 
+
+A variable is defined and initialised within the function. A parameter is defined as a part of the function definition. Code that calls your function can then pass values to those parameters. 
+
+Think about `function createBird(x, y)`. 
+
+- You can see the function `createBird()` expects to receive 2 parameters, `x`, and `y`.
+- The code that calls the `createBird()` function should pass in values to those parameters, so something like `createBird(100, 200)`.
+
+
 ---
 title: Final flowchart
 files: []
@@ -489,8 +590,7 @@ Take a look at the `main.js` code on the left. Let's flowchart the `checkBird()`
 
 ![](.guides/img/flow-if.png)
 
-It would also be possible in include the entire process, including the for loop or have the loop as a separate flowchart.
+Note how we have used a special shape for the `createBird()` function call. This shape denotes something that happens on screen. You could just have well used as regular rectangular box but there are special shapes for different purposes, which you can use if you want.
 
-Note how we have used a special shape for the `createBird()` function call. This shape denotes something that happens on screen. You could just have well used as regular rectangular box  but there are special shapes for different purposes.
+In a later module, we'll look at flowcharting in more detail. There's really not much to it.
 
-In a later module, we'll look at flowcharting in more detail. There's really not much too it.

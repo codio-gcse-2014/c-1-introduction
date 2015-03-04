@@ -15,5 +15,6 @@ function main() {
     createBird(calcX, 120);  
     counter = counter + 1;
   }
+  return;
   
 }

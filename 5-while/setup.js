@@ -13,5 +13,6 @@ function createBird(x, y) {
   bird.setAttribute("id", "bird" + birdCount++);
   bird.setAttribute("src", "bird.png");
   document.body.appendChild(bird);
-  document.body.appendChild(bird);
+  bird.style.display = 'none';
+  bird.style.display = 'block';
 }
