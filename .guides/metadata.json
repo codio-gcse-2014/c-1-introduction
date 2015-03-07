@@ -1,0 +1,384 @@
+{
+ "sections": [
+  {
+   "id": "58bcbe42-e4c5-5efd-3da6-fb7661a971cc",
+   "title": "What is a program?",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "1-intro/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 1-intro/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell-tree",
+   "path": [
+    "1-intro"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/What-is-a-program--58bc.md"
+  },
+  {
+   "id": "85e156c9-2d43-e571-999e-14646b31a109",
+   "title": "Places to store values",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "1-var-bird/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 1-var-bird/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "1-var-bird"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/Places-to-store-values-85e1.md"
+  },
+  {
+   "id": "80b486f7-24cb-8d6b-61be-a898a4d8d751",
+   "title": "Sit the bird on the branch",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Sit-the-bird-on-the-branch-80b4.md"
+  },
+  {
+   "id": "68d0e5f1-c5c8-b35e-e9a3-45cd4326877d",
+   "title": "How a program runs",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/How-a-program-runs-68d0.md"
+  },
+  {
+   "id": "cfcc4b02-64f1-9203-3588-64f56227cc15",
+   "title": "Variable recap",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Variable-recap-cfcc.md"
+  },
+  {
+   "id": "3af57712-5d83-8755-689b-61c58bd1f8d",
+   "title": "3 birds on a branch",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "2-var-3birds/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 2-var-3birds/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "2-var-3birds"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/3-birds-on-a-branch-3af5.md"
+  },
+  {
+   "id": "2c963bca-b9f9-cfa6-559f-d1b1f4c88e91",
+   "title": "3 better birds on a branch",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "3-var-3birds/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 3-var-3birds/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "3-var-3birds"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/3-better-birds-on-a-branch-2c96.md"
+  },
+  {
+   "id": "3be9a3e7-512b-e98e-614e-bd6443e425ea",
+   "title": "Our first Algorithm",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Our-first-Algorithm-3be9.md"
+  },
+  {
+   "id": "6e9ff7b0-3265-e36b-df3a-cdf9e86c48b",
+   "title": "Our first flowchart",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Our-first-flowchart-6e9f.md"
+  },
+  {
+   "id": "bf6ca3f9-fdbd-c7cb-75d5-b6967b8855c1",
+   "title": "A new way of placing birds",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "4-preloops/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 4-preloops/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "4-preloops"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/A-new-way-of-placing-birds-bf6c.md"
+  },
+  {
+   "id": "46d9f09d-64f3-149c-9ece-962f8de2ec6d",
+   "title": "While birds do loop - I",
+   "files": [
+    {
+     "path": "5-prewhile/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 5-prewhile/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "5-prewhile"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/While-birds-do-loop---I-46d9.md"
+  },
+  {
+   "id": "a032f355-390b-ee04-4233-e37a5fdffc90",
+   "title": "While birds do loop - II",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "5-while/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 5-while/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "5-while"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/While-birds-do-loop---II-a032.md"
+  },
+  {
+   "id": "923aa3cd-e203-c84c-c55e-d58d35158ae7",
+   "title": "Flowchart of our loop",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Flowchart-of-our-loop-923a.md"
+  },
+  {
+   "id": "5b37469f-eb6a-36f9-f5c2-b47b7276a45b",
+   "title": "For birds also loop - I",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "6-prefor/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 6-prefor/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "6-prefor"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/For-birds-also-loop---I-5b37.md"
+  },
+  {
+   "id": "d642c00e-4cec-5f9e-2fdf-7690d3c741b5",
+   "title": "For birds also loop - II",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "6-for/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 6-for/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "6-for"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/For-birds-also-loop---II-d642.md"
+  },
+  {
+   "id": "4f59bbe9-eb7f-7d72-e07d-355fb31354da",
+   "title": "If this then that, else the other",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "7-if/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 7-if/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "7-if"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/If-this-then-that--else-the-other-4f59.md"
+  },
+  {
+   "id": "7cb1b0d1-2de5-7777-23bb-52a4e3a9e05",
+   "title": "Conditional Statements",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Conditional-Statements-7cb1.md"
+  },
+  {
+   "id": "c305d95c-a3cc-553e-4ea6-439a88af5765",
+   "title": "Lots of caged birds",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "7-if-2/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 7-if-2/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "7-if-2"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/Lots-of-caged-birds-c305.md"
+  },
+  {
+   "id": "183c31f-ce80-ff5f-4e34-2ceeb2ec2b5c",
+   "title": "Functions",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Functions-183c.md"
+  },
+  {
+   "id": "f4652510-89ae-2124-9382-9f2fdf417c44",
+   "title": "More on functions",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "8-functions/main.js",
+     "panel": 0,
+     "action": "open"
+    },
+    {
+     "path": "#preview: 8-functions/index.html",
+     "panel": 1,
+     "action": "open"
+    }
+   ],
+   "layout": "",
+   "path": [
+    "8-functions"
+   ],
+   "type": "markdown",
+   "content-file": ".guides/content/More-on-functions-f465.md"
+  },
+  {
+   "id": "f632c550-36c3-3c-3b3f-a48f4c5396f4",
+   "title": "Final flowchart",
+   "files": [],
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Final-flowchart-f632.md"
+  }
+ ]
+}

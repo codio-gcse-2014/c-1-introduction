@@ -21,7 +21,7 @@ function main() {
       createBird(currentX, currentY);
       currentX = currentX + 60;
       if(currentX > 360) {
-        currentY += 80;
+        currentY = currentY + 80;
         currentX = 110;
       }
     }    
